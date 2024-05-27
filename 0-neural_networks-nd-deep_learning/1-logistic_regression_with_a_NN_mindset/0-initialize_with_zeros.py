@@ -20,6 +20,7 @@ def initialize_with_zeros(dim):
 
     return w, b
 
+
 dim = 2
 w, b = initialize_with_zeros(dim)
 

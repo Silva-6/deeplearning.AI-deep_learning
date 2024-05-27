@@ -45,3 +45,24 @@ def propagate(w, b, X, Y):
              "db": db}
 
     return grads, cost
+
+
+w = np.array([[1.], [2]])
+b = 1.5
+
+# X is using 3 examples, with 2 features each
+# Each example is stacked column-wise
+X = np.array([[1., -2., -1.], [3., 0.5, -3.2]])
+Y = np.array([[1, 1, 0]])
+grads, cost = propagate(w, b, X, Y)
+
+assert type(grads["dw"]) == np.ndarray
+assert grads["dw"].shape == (2, 1)
+assert type(grads["db"]) == np.float64
+
+
+print ("dw = " + str(grads["dw"]))
+print ("db = " + str(grads["db"]))
+print ("cost = " + str(cost))
+
+propagate_test(propagate)
