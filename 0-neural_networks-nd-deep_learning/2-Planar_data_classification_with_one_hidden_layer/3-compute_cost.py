@@ -28,3 +28,10 @@ def compute_cost(A2, Y):
     # E.g., turns [[17]] into 17
 
     return cost
+
+
+A2, t_Y = compute_cost_test_case()
+cost = compute_cost(A2, t_Y)
+print("cost = " + str(compute_cost(A2, t_Y)))
+
+compute_cost_test(compute_cost)
