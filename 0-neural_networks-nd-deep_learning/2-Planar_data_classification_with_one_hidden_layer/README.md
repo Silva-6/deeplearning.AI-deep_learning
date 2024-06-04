@@ -50,5 +50,5 @@ from planar_utils import plot_decision_boundary, sigmoid, load_planar_dataset, l
    - Implement backward propagation to get the gradients
    - Update parameters (gradient descent)
 
-In practice, you'll often build helper functions to compute steps 1-3, then merge them into one function called `nn_model()`. 
-Once you've built `nn_model()` and learned the right parameters, you can make predictions on new data.
+*In practice, you'll often build helper functions to compute steps 1-3, then merge them into one function called `nn_model()`. 
+Once you've built `nn_model()` and learned the right parameters, you can make predictions on new data.* 
