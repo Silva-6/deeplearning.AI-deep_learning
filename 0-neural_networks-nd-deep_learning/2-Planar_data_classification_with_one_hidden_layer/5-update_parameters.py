@@ -1,5 +1,6 @@
 # GRADED FUNCTION: update_parameters
 
+
 def update_parameters(parameters, grads, learning_rate=1.2):
     """
     Updates parameters using the gradient descent update rule given above
