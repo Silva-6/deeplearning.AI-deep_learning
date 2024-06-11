@@ -1,5 +1,6 @@
 # GRADED FUNCTION:forward_propagation
 
+
 def forward_propagation(X, parameters):
     """
     Argument:
