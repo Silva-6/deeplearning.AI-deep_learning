@@ -1,5 +1,6 @@
 # GRADED FUNCTION: predict
 
+
 def predict(parameters, X):
     """
     Using the learned parameters, predicts a class for each example in X

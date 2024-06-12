@@ -9,7 +9,7 @@ Welcome to your week 4 assignment (part 1 of 2)! Previously you trained a 2-laye
 
 - Use non-linear units like ReLU to improve your model
 - Build a deeper neural network (with more than 1 hidden layer)
-- Implement an easy-to-use neural network class
+- Implement an easy-to-use neural network class.
 
 ## 1 - Packages
 
@@ -18,7 +18,7 @@ First, import all the packages you'll need during this assignment.
 - [numpy](www.numpy.org) is the main package for scientific computing with Python.
 - [matplotlib](http://matplotlib.org) is a library to plot graphs in Python.
 - dnn_utils provides some necessary functions for this notebook.
-- testCases provides some test cases to assess the correctness of your functions
+- testCases provides some test cases to assess the correctness of your functions.
 - np.random.seed(1) is used to keep all the random function calls consistent. It helps grade your work. Please don't change the seed!
 
 ```
@@ -63,6 +63,6 @@ Each small helper function will have detailed instructions to walk you through t
 
 **Note**:
 
-For every forward function, there is a corresponding backward function. This is why at every step of your forward module you will be storing some values in a cache. These cached values are useful for computing gradients. 
+- For every forward function, there is a corresponding backward function. This is why at every step of your forward module you will be storing some values in a cache. These cached values are useful for computing gradients. 
 
-In the backpropagation module, you can then use the cache to calculate the gradients. Don't worry, this assignment will show you exactly how to carry out each of these steps! 
+- In the backpropagation module, you can then use the cache to calculate the gradients. Don't worry, this assignment will show you exactly how to carry out each of these steps! 
