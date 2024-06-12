@@ -1,10 +1,12 @@
 import numpy as np
 
+
 def layer_sizes_test_case():
     np.random.seed(1)
     X_assess = np.random.randn(5, 3)
     Y_assess = np.random.randn(2, 3)
     return X_assess, Y_assess
+
 
 def initialize_parameters_test_case():
     n_x, n_h, n_y = 2, 4, 1
@@ -27,6 +29,7 @@ def forward_propagation_test_case():
 
     return X_assess, parameters
 
+
 def compute_cost_test_case():
     np.random.seed(1)
     Y_assess = (np.random.randn(1, 3) > 0)
@@ -34,6 +37,7 @@ def compute_cost_test_case():
     a2 = (np.array([[ 0.5002307 ,  0.49985831,  0.50023963]]))
     
     return a2, Y_assess
+
 
 def backward_propagation_test_case():
     np.random.seed(1)
@@ -62,6 +66,7 @@ def backward_propagation_test_case():
   'Z2': np.array([[ 0.00092281, -0.00056678,  0.00095853]])}
     return parameters, cache, X_assess, Y_assess
 
+
 def update_parameters_test_case():
     parameters = {'W1': np.array([[-0.00615039,  0.0169021 ],
         [-0.02311792,  0.03137121],
@@ -87,11 +92,13 @@ def update_parameters_test_case():
  'db2': np.array([[ -1.08923140e-05]])}
     return parameters, grads
 
+
 def nn_model_test_case():
     np.random.seed(1)
     X_assess = np.random.randn(2, 4)
     Y_assess = (np.random.randn(1, 4) > 0)
     return X_assess, Y_assess
+
 
 def predict_test_case():
     np.random.seed(1)
