@@ -3,7 +3,7 @@
 def update_parameters(params, grads, learning_rate):
     """
     Update parameters using gradient descent
-
+_
     Arguments:
     params -- python dictionary containing your parameters
     grads -- python dictionary containing your gradients, output of L_model_backward
