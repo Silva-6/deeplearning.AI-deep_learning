@@ -1,4 +1,4 @@
-# Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and...
+# Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
 
 Discover and experiment with a variety of different initialization methods, apply L2 regularization and dropout to avoid 
 model overfitting, then apply gradient checking to identify errors in a fraud detection model.
