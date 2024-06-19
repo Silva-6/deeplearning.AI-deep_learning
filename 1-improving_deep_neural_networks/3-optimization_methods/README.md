@@ -34,3 +34,9 @@ plt.rcParams['image.cmap'] = 'gray'
 
 A simple optimization method in machine learning is gradient descent (GD). When you take gradient steps with respect 
 to all `m` examples on each step, it is also called Batch Gradient Descent.
+
+<font color='blue'>
+    
+**What you should remember**:
+- Shuffling and Partitioning are the two steps required to build mini-batches
+- Powers of two are often chosen to be the mini-batch size, e.g., 16, 32, 64, 128.
