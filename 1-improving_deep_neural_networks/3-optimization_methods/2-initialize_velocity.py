@@ -25,8 +25,8 @@ def initialize_velocity(parameters):
         # v["dW" + str(l)] =
         # v["db" + str(l)] =
         # YOUR CODE STARTS HERE
-        v["dW" + str(l + 1)] = np.zeros_like(parameters["W" + str(l + 1)])
-        v["db" + str(l + 1)] = np.zeros_like(parameters["b" + str(l + 1)])
+        v["dW" + str(l)] = np.zeros_like(parameters["W" + str(l)])
+        v["db" + str(l)] = np.zeros_like(parameters["b" + str(l)])
         # YOUR CODE ENDS HERE
 
     return v
