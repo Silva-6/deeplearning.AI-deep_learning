@@ -85,15 +85,12 @@ def update_parameters_with_adam(parameters, grads, v, s, t, learning_rate=0.01,
 
 parameters = initialize_adam_test_case()
 
-v, s = initialize_adam(parameters)
-print("v[\"dW1\"] = \n" + str(v["dW1"]))
-print("v[\"db1\"] = \n" + str(v["db1"]))
-print("v[\"dW2\"] = \n" + str(v["dW2"]))
-print("v[\"db2\"] = \n" + str(v["db2"]))
-print("s[\"dW1\"] = \n" + str(s["dW1"]))
-print("s[\"db1\"] = \n" + str(s["db1"]))
-print("s[\"dW2\"] = \n" + str(s["dW2"]))
-print("s[\"db2\"] = \n" + str(s["db2"]))
+parametersi, grads, vi, si, t, learning_rate, beta1, beta2, epsilon = update_parameters_with_adam_test_case()
 
-initialize_adam_test(initialize_adam)
+parameters, v, s, vc, sc  = update_parameters_with_adam(parametersi, grads, vi, si, t, learning_rate, beta1, beta2, epsilon)
+print(f"W1 = \n{parameters['W1']}")
+print(f"W2 = \n{parameters['W2']}")
+print(f"b1 = \n{parameters['b1']}")
+print(f"b2 = \n{parameters['b2']}")
 
+update_parameters_with_adam_test(update_parameters_with_adam)
