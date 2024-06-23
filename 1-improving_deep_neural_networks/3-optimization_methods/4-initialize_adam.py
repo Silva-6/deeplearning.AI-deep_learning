@@ -27,16 +27,16 @@ def initialize_adam(parameters):
 
     # Initialize v, s. Input: "parameters". Outputs: "v, s".
     for l in range(1, L + 1):
-    # (approx. 4 lines)
-    # v["dW" + str(l)] = ...
-    # v["db" + str(l)] = ...
-    # s["dW" + str(l)] = ...
-    # s["db" + str(l)] = ...
-    # YOUR CODE STARTS HERE
-    v["dW" + str(l)] = np.zeros_like(parameters["W" + str(l)])
-    v["db" + str(l)] = np.zeros_like(parameters["b" + str(l)])
-    s["dW" + str(l)] = np.zeros_like(parameters["W" + str(l)])
-    s["db" + str(l)] = np.zeros_like(parameters["b" + str(l)])
+        # (approx. 4 lines)
+        # v["dW" + str(l)] = ...
+        # v["db" + str(l)] = ...
+        # s["dW" + str(l)] = ...
+        # s["db" + str(l)] = ...
+        # YOUR CODE STARTS HERE
+        v["dW" + str(l)] = np.zeros_like(parameters["W" + str(l)])
+        v["db" + str(l)] = np.zeros_like(parameters["b" + str(l)])
+        s["dW" + str(l)] = np.zeros_like(parameters["W" + str(l)])
+        s["db" + str(l)] = np.zeros_like(parameters["b" + str(l)])
     # YOUR CODE ENDS HERE
 
     return v, s

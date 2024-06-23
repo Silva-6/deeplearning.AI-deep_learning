@@ -74,10 +74,10 @@ def update_parameters_with_adam(parameters, grads, v, s, t, learning_rate=0.01,
         # parameters["W" + str(l)] = ...
         # parameters["b" + str(l)] = ...
         # YOUR CODE STARTS HERE
-        parameters["W" + str(l)] = parameters["W" + str(l)] - learning_rate * v_corrected["dW" + str(l)] / np.sqrt(
-            s_corrected["dW" + str(l)] + epsilon)
-        parameters["b" + str(l)] = parameters["b" + str(l)] - learning_rate * v_corrected["db" + str(l)] / np.sqrt(
-            s_corrected["db" + str(l)] + epsilon)
+        parameters["W" + str(l)] = parameters["W" + str(l)] - learning_rate * v_corrected["dW" + str(l)] / (
+                    np.sqrt(s_corrected["dW" + str(l)]) + epsilon)
+        parameters["b" + str(l)] = parameters["b" + str(l)] - learning_rate * v_corrected["db" + str(l)] / (
+                    np.sqrt(s_corrected["db" + str(l)]) + epsilon)
         ### END CODE HERE ###
 
     return parameters, v, s, v_corrected, s_corrected
