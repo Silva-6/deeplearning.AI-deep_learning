@@ -16,7 +16,7 @@ def schedule_lr_decay(learning_rate0, epoch_num, decay_rate, time_interval=1000)
     # (approx. 1 lines)
     # learning_rate = ...
     # YOUR CODE STARTS HERE
-    learning_rate = 1 / (1 + decay_rate * (epoch_num / time_interval)) * learning_rate
+    learning_rate = 1 / (1 + decay_rate * np.floor(epoch_num / time_interval)) * learning_rate
     # YOUR CODE ENDS HERE
     return learning_rate
 
