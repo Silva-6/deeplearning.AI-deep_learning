@@ -104,3 +104,54 @@ axes = plt.gca()
 axes.set_xlim([-1.5,2.5])
 axes.set_ylim([-1,1.5])
 plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
+
+
+## Run the following code to see how the model does gradient descent and weight decay.
+
+# train 3-layer model
+layers_dims = [train_X.shape[0], 5, 2, 1]
+parameters = model(train_X, train_Y, layers_dims, optimizer = "gd", learning_rate = 0.1, num_epochs=5000, decay=schedule_lr_decay)
+
+# Predict
+predictions = predict(train_X, train_Y, parameters)
+
+# Plot decision boundary
+plt.title("Model with Gradient Descent optimization")
+axes = plt.gca()
+axes.set_xlim([-1.5,2.5])
+axes.set_ylim([-1,1.5])
+plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
+
+
+## Run the following code to see how the model does gradient descent with momentum and weight decay.
+
+# train 3-layer model
+layers_dims = [train_X.shape[0], 5, 2, 1]
+parameters = model(train_X, train_Y, layers_dims, optimizer = "momentum", learning_rate = 0.1, num_epochs=5000, decay=schedule_lr_decay)
+
+# Predict
+predictions = predict(train_X, train_Y, parameters)
+
+# Plot decision boundary
+plt.title("Model with Gradient Descent with momentum optimization")
+axes = plt.gca()
+axes.set_xlim([-1.5,2.5])
+axes.set_ylim([-1,1.5])
+plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
+
+
+## Run the following code to see how the model does Adam and weight decay.
+
+# train 3-layer model
+layers_dims = [train_X.shape[0], 5, 2, 1]
+parameters = model(train_X, train_Y, layers_dims, optimizer = "adam", learning_rate = 0.01, num_epochs=5000, decay=schedule_lr_decay)
+
+# Predict
+predictions = predict(train_X, train_Y, parameters)
+Run the following code to see how the model does Adam and weight decay.
+# Plot decision boundary
+plt.title("Model with Adam optimization")
+axes = plt.gca()
+axes.set_xlim([-1.5,2.5])
+axes.set_ylim([-1,1.5])
+plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
