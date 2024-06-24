@@ -11,6 +11,7 @@ By the end of this assignment, you'll be able to do the following in TensorFlow 
 Programming frameworks like TensorFlow not only cut down on time spent coding, but can also perform optimizations that speed up the code itself.
 
 ## 1 - Packages
+```
 import h5py
 import numpy as np
 import tensorflow as tf
@@ -18,7 +19,7 @@ import matplotlib.pyplot as plt
 from tensorflow.python.framework.ops import EagerTensor
 from tensorflow.python.ops.resource_variable_ops import ResourceVariable
 import time
-
+```
 ## 2 - Basic Optimization with GradientTape
 
 The beauty of TensorFlow 2 is in its simplicity. Basically, all you need to do is implement forward propagation through a computational graph. 
