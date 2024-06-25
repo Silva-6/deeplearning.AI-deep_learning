@@ -36,3 +36,9 @@ def one_hot_matrix_test(target):
 
 
 one_hot_matrix_test(one_hot_matrix)
+
+
+new_y_test = y_test.map(one_hot_matrix)
+new_y_train = y_train.map(one_hot_matrix)
+
+print(next(iter(new_y_test)))
