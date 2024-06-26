@@ -38,6 +38,7 @@ def forward_propagation(X, parameters):
     return Z3
 
 
+# testing the function
 def forward_propagation_test(target, examples):
     minibatches = examples.batch(2)
     parametersk = initialize_parameters()
