@@ -93,3 +93,27 @@ def model(X_train, Y_train, X_test, Y_test, learning_rate=0.0001,
             test_accuracy.reset_states()
 
     return parameters, costs, train_acc, test_acc
+
+
+parameters, costs, train_acc, test_acc = model(new_train, new_y_train, new_test, new_y_test, num_epochs=100)
+# Numbers you get can be different, just check that your loss is going down and your accuracy going up!
+
+
+# Plot the cost
+plt.plot(np.squeeze(costs))
+plt.ylabel('cost')
+plt.xlabel('iterations (per fives)')
+plt.title("Learning rate =" + str(0.0001))
+plt.show()
+
+# Plot the train accuracy
+plt.plot(np.squeeze(train_acc))
+plt.ylabel('Train Accuracy')
+plt.xlabel('iterations (per fives)')
+plt.title("Learning rate =" + str(0.0001))
+# Plot the test accuracy
+plt.plot(np.squeeze(test_acc))
+plt.ylabel('Test Accuracy')
+plt.xlabel('iterations (per fives)')
+plt.title("Learning rate =" + str(0.0001))
+plt.show()
