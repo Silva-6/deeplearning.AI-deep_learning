@@ -13,7 +13,7 @@ def one_hot_matrix(label, C=6):
     # (approx. 1 line)
     # one_hot = None(None(None, None, None), shape=[C, ])
     # YOUR CODE STARTS HERE
-    one_hot = tf.reshape(tf.one_hot(label, depth, axis=0), [depth,1])
+    one_hot = tf.reshape(tf.one_hot(label, C, axis=0), [C,])
     # YOUR CODE ENDS HERE
     return one_hot
 
