@@ -2,7 +2,7 @@
 * Explore how CNNs can be applied to multiple fields, including art generation and face recognition, then implement your 
 own algorithm to generate art and recognize faces!
 
-## Learning Objectives
+## Learning Objectives:
 + Differentiate between face recognition and face verification
 * Implement one-shot learning to solve a face recognition problem
 + Apply the triplet loss function to learn a network's parameters in the context of face recognition
